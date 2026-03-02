@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "packs": [
+    {
+      "name": "react",
+      "description": "React 18+ best practices: hooks, component patterns, performance, and testing",
+      "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+      "author": "zekariasasaminew",
+      "tags": ["react", "frontend", "javascript", "hooks"]
+    },
+    {
+      "name": "nextjs",
+      "description": "Next.js 14+ App Router conventions, server components, and data fetching patterns",
+      "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+      "author": "zekariasasaminew",
+      "tags": ["nextjs", "react", "fullstack", "app-router"]
+    },
+    {
+      "name": "typescript",
+      "description": "TypeScript strict mode guidelines, type patterns, and common anti-patterns to avoid",
+      "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+      "author": "zekariasasaminew",
+      "tags": ["typescript", "javascript", "types"]
+    },
+    {
+      "name": "python",
+      "description": "Python 3.10+ best practices, type hints, async patterns, and project structure",
+      "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+      "author": "zekariasasaminew",
+      "tags": ["python", "backend", "async"]
+    },
+    {
+      "name": "go",
+      "description": "Go idiomatic patterns, error handling, concurrency, and project layout conventions",
+      "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+      "author": "zekariasasaminew",
+      "tags": ["go", "backend", "concurrency"]
+    }
+  ]
+}
