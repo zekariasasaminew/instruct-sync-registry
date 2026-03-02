@@ -1,0 +1,44 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate registry.json
+        run: |
+          node -e "
+          const fs = require('fs');
+          const data = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
+          const packs = data.packs;
+          if (!Array.isArray(packs)) throw new Error('packs must be an array');
+          for (const p of packs) {
+            if (!p.name || !p.source || !p.description) {
+              throw new Error('Each pack needs name, source, description: ' + JSON.stringify(p));
+            }
+            if (!p.source.startsWith('github:')) {
+              throw new Error('source must start with github: — got: ' + p.source);
+            }
+          }
+          console.log('registry.json is valid (' + packs.length + ' packs)');
+          "
+      - name: Check all sources exist
+        run: |
+          for f in packs/*.md; do
+            echo "  found: $f"
+          done
+          node -e "
+          const fs = require('fs');
+          const { packs } = JSON.parse(fs.readFileSync('registry.json', 'utf8'));
+          for (const p of packs) {
+            const file = p.source.replace(/^github:[^/]+\/[^/]+\//, '');
+            if (!fs.existsSync(file)) throw new Error('Missing file for pack ' + p.name + ': ' + file);
+          }
+          console.log('All pack files present');
+          "
