@@ -1,40 +1,135 @@
 {
-  "version": 1,
+  "version": 2,
   "packs": [
     {
       "name": "react",
       "description": "React 18+ best practices: hooks, component patterns, performance, and testing",
-      "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+      "targets": {
+        "copilot": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+          "target": ".github/instructions/react.instructions.md"
+        },
+        "cursor": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+          "target": ".cursor/rules/react.mdc"
+        },
+        "claude": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+          "target": ".claude/rules/react.md"
+        },
+        "windsurf": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+          "target": ".windsurf/rules/react.md"
+        }
+      },
       "author": "zekariasasaminew",
       "tags": ["react", "frontend", "javascript", "hooks"]
     },
     {
       "name": "nextjs",
       "description": "Next.js 14+ App Router conventions, server components, and data fetching patterns",
-      "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+      "targets": {
+        "copilot": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+          "target": ".github/instructions/nextjs.instructions.md"
+        },
+        "cursor": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+          "target": ".cursor/rules/nextjs.mdc"
+        },
+        "claude": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+          "target": ".claude/rules/nextjs.md"
+        },
+        "windsurf": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+          "target": ".windsurf/rules/nextjs.md"
+        }
+      },
       "author": "zekariasasaminew",
       "tags": ["nextjs", "react", "fullstack", "app-router"]
     },
     {
       "name": "typescript",
       "description": "TypeScript strict mode guidelines, type patterns, and common anti-patterns to avoid",
-      "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+      "targets": {
+        "copilot": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+          "target": ".github/instructions/typescript.instructions.md"
+        },
+        "cursor": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+          "target": ".cursor/rules/typescript.mdc"
+        },
+        "claude": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+          "target": ".claude/rules/typescript.md"
+        },
+        "windsurf": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+          "target": ".windsurf/rules/typescript.md"
+        }
+      },
       "author": "zekariasasaminew",
       "tags": ["typescript", "javascript", "types"]
     },
     {
       "name": "python",
       "description": "Python 3.10+ best practices, type hints, async patterns, and project structure",
-      "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+      "targets": {
+        "copilot": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+          "target": ".github/instructions/python.instructions.md"
+        },
+        "cursor": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+          "target": ".cursor/rules/python.mdc"
+        },
+        "claude": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+          "target": ".claude/rules/python.md"
+        },
+        "windsurf": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+          "target": ".windsurf/rules/python.md"
+        }
+      },
       "author": "zekariasasaminew",
       "tags": ["python", "backend", "async"]
     },
     {
       "name": "go",
       "description": "Go idiomatic patterns, error handling, concurrency, and project layout conventions",
-      "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+      "targets": {
+        "copilot": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+          "target": ".github/instructions/go.instructions.md"
+        },
+        "cursor": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+          "target": ".cursor/rules/go.mdc"
+        },
+        "claude": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+          "target": ".claude/rules/go.md"
+        },
+        "windsurf": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+          "target": ".windsurf/rules/go.md"
+        }
+      },
       "author": "zekariasasaminew",
       "tags": ["go", "backend", "concurrency"]
+    },
+    {
+      "name": "agents",
+      "description": "Cross-tool AGENTS.md with general coding best practices for all AI agents",
+      "tool": "agents",
+      "source": "github:zekariasasaminew/instruct-sync-registry/packs/agents.md",
+      "target": "AGENTS.md",
+      "author": "zekariasasaminew",
+      "tags": ["agents", "cross-tool", "openai", "universal"]
     }
   ]
 }
+
