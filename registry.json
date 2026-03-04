@@ -20,6 +20,10 @@
         "windsurf": {
           "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
           "target": ".windsurf/rules/react.md"
+        },
+        "cline": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/react.md",
+          "target": ".clinerules/react.md"
         }
       },
       "author": "zekariasasaminew",
@@ -44,6 +48,10 @@
         "windsurf": {
           "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
           "target": ".windsurf/rules/nextjs.md"
+        },
+        "cline": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/nextjs.md",
+          "target": ".clinerules/nextjs.md"
         }
       },
       "author": "zekariasasaminew",
@@ -68,6 +76,10 @@
         "windsurf": {
           "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
           "target": ".windsurf/rules/typescript.md"
+        },
+        "cline": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/typescript.md",
+          "target": ".clinerules/typescript.md"
         }
       },
       "author": "zekariasasaminew",
@@ -92,6 +104,10 @@
         "windsurf": {
           "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
           "target": ".windsurf/rules/python.md"
+        },
+        "cline": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/python.md",
+          "target": ".clinerules/python.md"
         }
       },
       "author": "zekariasasaminew",
@@ -116,6 +132,10 @@
         "windsurf": {
           "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
           "target": ".windsurf/rules/go.md"
+        },
+        "cline": {
+          "source": "github:zekariasasaminew/instruct-sync-registry/packs/go.md",
+          "target": ".clinerules/go.md"
         }
       },
       "author": "zekariasasaminew",
@@ -132,4 +152,5 @@
     }
   ]
 }
+
 
